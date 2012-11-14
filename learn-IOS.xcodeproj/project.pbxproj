@@ -39,6 +39,8 @@
 		0AE6C53216533EC2002B0169 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0AE6C53516533EC2002B0169 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		0AE6C53816533EC2002B0169 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		0AE6C53F16533EF0002B0169 /* MyClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
+		0AE6C54016533EF0002B0169 /* MyClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,8 @@
 				0AE6C52816533EC2002B0169 /* AppDelegate.h */,
 				0AE6C52916533EC2002B0169 /* AppDelegate.m */,
 				0AE6C53116533EC2002B0169 /* ViewController.h */,
+				0AE6C53F16533EF0002B0169 /* MyClass.h */,
+				0AE6C54016533EF0002B0169 /* MyClass.m */,
 				0AE6C53216533EC2002B0169 /* ViewController.m */,
 				0AE6C53416533EC2002B0169 /* ViewController_iPhone.xib */,
 				0AE6C53716533EC2002B0169 /* ViewController_iPad.xib */,
