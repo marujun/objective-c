@@ -1,0 +1,286 @@
+#witmob {
+    position: absolute;
+    width: 1024px;
+    height: 768px;
+    left: 50%;
+    margin-left: -512px;
+    overflow: hidden;
+    top:0;
+}
+.recordNumber{
+    position: absolute;
+    height: 25px;
+    width: 800px;
+    top:725px;
+    left: 112px;
+    background-color: #e8e5e5;
+    text-align: center;
+    line-height:25px;
+    vertical-align:middle;
+}
+.icon {
+    width: 100%;
+    position: absolute;
+    height: 60px;
+    left: 30px;
+}
+.icon-image {
+    width: 120px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#app {
+    position: absolute;
+    /*width: 80%;*/
+    top: 65px;
+}
+.company-name {
+    position: absolute;
+    width: 150px;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.menu {
+    position: absolute;
+    width: 800px;
+    height: 20px;
+    left: 190px;
+    top: -13px;
+}
+
+.menu div:nth-child(1) {
+    float: left;
+    display: inline-block;
+    height: 25px;line-height:25px;
+    width: 40px;
+    margin-left: 30px;
+    text-align: center;
+    vertical-align:middle;
+    cursor:pointer;
+}
+
+/*.menu div:hover{*/
+    /*background-color: #a9a9a9;*/
+/*}*/
+.menu div:nth-child(2) {
+    float: left;
+    display: inline-block;
+    margin-left: 30px;
+    height: 25px;line-height:25px;
+    width: 80px;
+    text-align: center;
+    vertical-align:middle;
+    cursor:pointer;
+}
+
+.menu div:nth-child(3) {
+    float: left;
+    display: inline-block;
+    margin-left: 30px;
+    height: 25px;line-height:25px;
+    width: 80px;
+    text-align: center;
+    vertical-align:middle;
+    cursor:pointer;
+}
+
+.company-name p {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 80px;
+}
+
+.show_serveImage {
+    position: absolute;
+    top: 80px;
+    left: 160px;
+    /*width: 400px;*/
+    /*height: 700px;*/
+    /*overflow: hidden;*/
+}
+
+.roll_image {
+    width: 400px;
+    height: 550px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.roll_image img {
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.detail_info {
+    position: absolute;
+    top: 100px;
+    left: 630px;
+    width: 300px;
+    z-index: 10;
+}
+
+.slogan1 {
+    margin-top: 70px;
+}
+
+.slogan2 {
+    margin-top: 10px;
+    margin-left: 75px;
+}
+
+.contact_way {
+    margin-left: 40px;
+    position: absolute;
+    top: 200px;
+    width: 300px;
+    z-index: 10;
+}
+
+.contact_way :nth-child(3) {
+    margin-top: 40px;
+    margin-left: -40px;
+}
+
+.icon_email {
+    position: absolute;
+    display: inline-block;
+    width: 35px;
+    height: 29px;
+}
+
+.txt_email {
+    position: absolute;
+    display: inline-block;
+    left: 50px;
+    top: 5px;
+    cursor:pointer;
+}
+
+.icon_phone {
+    position: absolute;
+    top: 50px;
+}
+
+.txt_phone {
+    position: absolute;
+    display: inline-block;
+    left: 50px;
+    top: 58px;
+}
+
+.contact_way :nth-child(6) {
+    margin-top: 47px;
+    margin-left: -40px;
+}
+
+.icon_address {
+    position: absolute;
+    top: 100px;
+}
+
+.txt_address {
+    position: absolute;
+    display: inline-block;
+    left: 50px;
+    top: 103px;
+    cursor:pointer;
+}
+
+.roll_image {
+    top: 10px;
+    position: absolute;
+    width: 400px;
+    left:0;
+    z-index: 0;
+    overflow: hidden;
+}
+.roll_image img{
+    opacity: 0;
+    -webkit-transform: scale(0.1,0.1);
+    -o-transform: scale(0.1,0.1);
+    -ms-transform: scale(0.1,0.1);
+    -moz-transform: scale(0.1,0.1);
+}
+.roll_iphone{
+     position: absolute;
+    margin-left:85px;
+    margin-top:35px;
+ }
+.roll_android_phone{
+    position: absolute;
+    margin-left: 85px;
+    margin-top:35px;
+}
+.roll_android_pad{
+    position: absolute;
+    margin-top:80px;
+    /*margin-left:-5px ;*/
+    width: 390px;
+}
+.company_map{
+    position: absolute;
+    width: 1024px;
+    height: 768px;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.map_area_shadow{
+    background-color: black;
+    position: absolute;
+    width: 1024px;
+    height: 768px;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+}
+.mapArea{
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    left: 112px;
+    top: 89px;
+    opacity: 1;
+    width: 800px;
+    margin: 0 auto;
+    background: #fff  repeat-x center bottom;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border-top: 1px solid #fff;
+    padding-bottom: 26px;
+}
+.navigationBar{
+    position: absolute;
+    width: 800px;
+    height: 50px;
+    top:0;
+    left: 0;
+    /*background-color: #a9a9a9;*/
+}
+#map{
+    position: absolute;
+    width: 750px;
+    height: 500px;
+    top:70px;
+    left: 25px;
+}
+#searchResult{
+    position: absolute;
+    width: 220px;
+    height: 500px;
+    overflow:scroll;
+    left: 775px;
+    top:70px
+}
+.resetButton{
+    position: absolute;
+    top:30px;
+    left: 20px;
+    height: 30px;
+    opacity: 0;
+}

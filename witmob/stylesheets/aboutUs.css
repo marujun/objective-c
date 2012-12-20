@@ -1,0 +1,58 @@
+
+#about_us{
+    position: absolute;
+    margin-top: 100px;
+}
+.first_about_us{
+    position: absolute;
+    width: 1024px;
+    height: 122px;
+}
+.first_about_text{
+    position: absolute;
+    z-index: 10;
+    width: 600px;
+    top: 30px;
+    margin-left: 230px;
+    line-height: 35px;
+}
+
+.first_about_text>font:nth-child(3){ margin-left: 59px;}
+.two_about_text>font:nth-child(3){ margin-left: 59px;}
+.third_about_text>font:nth-child(3){ margin-left: 59px;}
+.two_about_us{
+    position: absolute;
+    top:122px;
+    width: 1024px;
+    height: 122px;
+}
+.two_about_text{
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    width: 600px;
+    margin-left: 230px;
+    line-height: 35px;
+}
+.third_about_us{
+    position: absolute;
+    top:244px;
+    width: 1024px;
+    height: 122px;
+}
+.third_about_text{
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    width: 600px;
+    margin-left: 230px;
+    line-height: 35px;
+}
+
+#about_us font{
+    opacity: 0.3;
+}
+#about_us img{
+    position: absolute;
+    top: 0;
+}

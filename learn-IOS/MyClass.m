@@ -21,9 +21,7 @@
         age=newAge;
         
     }
-    
-    return self;
-    
+    return self;    
 }
 
 - (id)init{//默认的构造方法，要么返回完整的对象，要么抛出异常
@@ -51,7 +49,6 @@
     [name release];//先销毁成员变量
     
     [super dealloc];//最后掉用基类的销毁
-    
 }
 
 +(void)className{//实现类静态方法
