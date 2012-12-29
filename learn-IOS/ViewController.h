@@ -7,14 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+#import <AddressBook/AddressBook.h>
+#import <AddressBookUI/AddressBookUI.h>
+@interface ViewController : UIViewController<UITableViewDataSource, UITableViewDelegate,ABPeoplePickerNavigationControllerDelegate>
 {
     NSArray *items;
     UIViewController *changeViewController;
 }
 
 @property (nonatomic,retain) NSArray *items;    //存储列表数据
+
 
 - (IBAction)operate_addresBook:(id)sender;
 
@@ -39,5 +41,9 @@
 - (IBAction)look_navigation:(id)sender;
 
 - (IBAction)operate_db:(id)sender;
+
+- (IBAction)showAnimate:(id)sender;
+
+- (IBAction)showAnimateGather:(id)sender;
 
 @end

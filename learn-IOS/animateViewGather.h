@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface animateViewGather : UIViewController
+@interface animateViewGather : UIViewController<UITabBarControllerDelegate>
+@property (retain, nonatomic) IBOutlet UIImageView *lImage;
+@property (retain, nonatomic) IBOutlet UIImageView *mImage;
+- (IBAction)viewPress:(id)sender;
+- (IBAction)blockPress:(id)sender;
+- (IBAction)caPress:(id)sender;
 
 @end

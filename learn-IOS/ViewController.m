@@ -11,10 +11,10 @@
 #import "dictionary_use_demo.h"
 #import "PDFViewBase.h"
 #import "Nav_Controller.h"
-#import "/usr/include/sqlite3.h"
+#import "ShowAnimate.h"
+#import "FMDatabase.h"
+#import "animateViewGather.h"
 #import "WebViewController_local.h"
-#import <AddressBook/AddressBook.h>
-#import <AddressBookUI/AddressBookUI.h>
 @interface ViewController ()
 
 @end
@@ -86,10 +86,11 @@
     [alert release];
     
 }
-- (void)peoplePickerNavigationController: (ABPeoplePickerNavigationController *)peoplePicker
+- (BOOL)peoplePickerNavigationController: (ABPeoplePickerNavigationController *)peoplePicker
 
       shouldContinueAfterSelectingPerson:(ABRecordRef)person{
     NSLog(@"用户选择了通讯录一级列表的某一项");
+    return true;
 }
 - (void)peoplePickerNavigationControllerDidCancel:(ABPeoplePickerNavigationController *)peoplePicker
 {
@@ -221,32 +222,34 @@
 }
 
 - (IBAction)operate_db:(id)sender {
-    sqlite3 *database;
-    NSArray *documentsPaths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory
-                                                                , NSUserDomainMask
-                                                                , YES);
-    NSString *databaseFilePath=[[documentsPaths objectAtIndex:0] stringByAppendingPathComponent:@"data.sqlite"];
-    
-//    NSString *databaseFilePath = [[NSBundle mainBundle] pathForResource:@"data" ofType:@"sqlite"];
-    if (sqlite3_open([databaseFilePath UTF8String], &database)==SQLITE_OK) {
-        NSLog(@"open sqlite db ok.");
+    NSString *dbPath = [[NSBundle mainBundle] pathForResource:@"subway" ofType:@"sqlite"];
+
+    FMDatabase *db= [FMDatabase databaseWithPath:dbPath] ;
+    [db open];
+    FMResultSet *rs = [db executeQuery:@"select * from camera"];
+    while ([rs next]) {
+        NSLog(@"%@ %@",
+              [rs stringForColumn:@"CCTV_STATION"],
+              [rs stringForColumn:@"CCTV_GROUP"]);
     }
-    const char *selectSql="select * from camera";
-    NSString *query =@"select * from camera";
-    sqlite3_stmt *statement;
-    int result = sqlite3_prepare_v2(database, [query UTF8String], -1, &statement, nil);
-    NSLog(@"select result %d",result);
-    if (sqlite3_prepare_v2(database, selectSql, -1, &statement, nil)==SQLITE_OK) {
-        NSLog(@"select ok.");
+    FMResultSet *s = [db executeQuery:@"SELECT COUNT(*) FROM camera"];
+    if ([s next]) {
+        int totalCount = [s intForColumnIndex:0];
+        NSLog(@"数据库记录数目统计：%d",totalCount);
     }
-    while (sqlite3_step(statement)==SQLITE_ROW) {
-        int _id=sqlite3_column_int(statement, 0);
-        NSString *name=[[NSString alloc] initWithCString:(char *)sqlite3_column_text(statement, 1) encoding:NSUTF8StringEncoding];
-        NSLog(@"row>>id %i, name %@",_id,name);
-    }
-    
-    sqlite3_finalize(statement);
+    [db close];
 }
 
+- (IBAction)showAnimate:(id)sender {
+    changeViewController=[[[ShowAnimate alloc] initWithNibName:@"ShowAnimate" bundle:nil] autorelease];
+    [self addChildViewController:changeViewController];
+    [self.view addSubview:changeViewController.view];
+}
+
+- (IBAction)showAnimateGather:(id)sender {
+    changeViewController=[[[animateViewGather alloc] initWithNibName:@"animateViewGather" bundle:nil] autorelease];
+    [self addChildViewController:changeViewController];
+    [self.view addSubview:changeViewController.view];
+}
 
 @end
