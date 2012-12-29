@@ -46,4 +46,6 @@
 
 - (IBAction)showAnimateGather:(id)sender;
 
+- (IBAction)jumpAnimate:(id)sender;
+
 @end

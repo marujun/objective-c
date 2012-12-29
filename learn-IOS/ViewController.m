@@ -15,6 +15,7 @@
 #import "FMDatabase.h"
 #import "animateViewGather.h"
 #import "WebViewController_local.h"
+#import "jumpAnimate.h"
 @interface ViewController ()
 
 @end
@@ -248,6 +249,12 @@
 
 - (IBAction)showAnimateGather:(id)sender {
     changeViewController=[[[animateViewGather alloc] initWithNibName:@"animateViewGather" bundle:nil] autorelease];
+    [self addChildViewController:changeViewController];
+    [self.view addSubview:changeViewController.view];
+}
+
+- (IBAction)jumpAnimate:(id)sender {
+    changeViewController=[[[jumpAnimate alloc] initWithNibName:@"jumpAnimate" bundle:nil] autorelease];
     [self addChildViewController:changeViewController];
     [self.view addSubview:changeViewController.view];
 }

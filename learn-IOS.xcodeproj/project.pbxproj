@@ -30,6 +30,8 @@
 		0A88B07D168E910700CE8A57 /* animateViewGather.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A88B07B168E910700CE8A57 /* animateViewGather.m */; };
 		0A88B07E168E910700CE8A57 /* animateViewGather.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A88B07C168E910700CE8A57 /* animateViewGather.xib */; };
 		0A88B08B168E997F00CE8A57 /* m.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A88B08A168E997F00CE8A57 /* m.jpg */; };
+		0A88B0D7168ECC9700CE8A57 /* jumpAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A88B0D5168ECC9700CE8A57 /* jumpAnimate.m */; };
+		0A88B0D8168ECC9700CE8A57 /* jumpAnimate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A88B0D6168ECC9700CE8A57 /* jumpAnimate.xib */; };
 		0AA8D6611681A5220044588F /* WebViewController_local.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8D65F1681A5220044588F /* WebViewController_local.m */; };
 		0AA8D6621681A5220044588F /* WebViewController_local.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AA8D6601681A5220044588F /* WebViewController_local.xib */; };
 		0AB7106E16816E91004C0F72 /* pfview.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB7106D16816E90004C0F72 /* pfview.m */; };
@@ -106,6 +108,9 @@
 		0A88B07B168E910700CE8A57 /* animateViewGather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = animateViewGather.m; sourceTree = "<group>"; };
 		0A88B07C168E910700CE8A57 /* animateViewGather.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = animateViewGather.xib; sourceTree = "<group>"; };
 		0A88B08A168E997F00CE8A57 /* m.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = m.jpg; sourceTree = "<group>"; };
+		0A88B0D4168ECC9700CE8A57 /* jumpAnimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jumpAnimate.h; sourceTree = "<group>"; };
+		0A88B0D5168ECC9700CE8A57 /* jumpAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jumpAnimate.m; sourceTree = "<group>"; };
+		0A88B0D6168ECC9700CE8A57 /* jumpAnimate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = jumpAnimate.xib; sourceTree = "<group>"; };
 		0AA8D65E1681A5220044588F /* WebViewController_local.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController_local.h; sourceTree = "<group>"; };
 		0AA8D65F1681A5220044588F /* WebViewController_local.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController_local.m; sourceTree = "<group>"; };
 		0AA8D6601681A5220044588F /* WebViewController_local.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController_local.xib; sourceTree = "<group>"; };
@@ -255,6 +260,9 @@
 				0A88B07A168E910700CE8A57 /* animateViewGather.h */,
 				0A88B07B168E910700CE8A57 /* animateViewGather.m */,
 				0A88B07C168E910700CE8A57 /* animateViewGather.xib */,
+				0A88B0D4168ECC9700CE8A57 /* jumpAnimate.h */,
+				0A88B0D5168ECC9700CE8A57 /* jumpAnimate.m */,
+				0A88B0D6168ECC9700CE8A57 /* jumpAnimate.xib */,
 			);
 			name = animate;
 			sourceTree = "<group>";
@@ -460,6 +468,7 @@
 				0A88B079168E8FE500CE8A57 /* l.jpg in Resources */,
 				0A88B07E168E910700CE8A57 /* animateViewGather.xib in Resources */,
 				0A88B08B168E997F00CE8A57 /* m.jpg in Resources */,
+				0A88B0D8168ECC9700CE8A57 /* jumpAnimate.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +499,7 @@
 				0A179CCD168C077000A8D942 /* FMResultSet.m in Sources */,
 				0AC1E9D7168D8530005B66B1 /* ShowAnimate.m in Sources */,
 				0A88B07D168E910700CE8A57 /* animateViewGather.m in Sources */,
+				0A88B0D7168ECC9700CE8A57 /* jumpAnimate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
