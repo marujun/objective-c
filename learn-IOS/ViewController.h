@@ -38,4 +38,6 @@
 
 - (IBAction)look_navigation:(id)sender;
 
+- (IBAction)operate_db:(id)sender;
+
 @end
